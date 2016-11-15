@@ -1,0 +1,1 @@
+export { default } from 'ember-email-modal/components/ui/wrapped-textarea';

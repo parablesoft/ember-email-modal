@@ -1,0 +1,20 @@
+
+{{#bs-modal title=title footer=footer body=body header=header size=size closeAction=closeEmailModal}}
+  {{#bs-modal-body}}
+  <div class="row">
+    <div class="col-sm-8">
+      {{ui/wrapped-input label="To" value=toValue placeholder="Who are you sending this email to?"}}
+      {{ui/wrapped-input label="CC" value=ccValue placeholder="Would you like to copy anyone else?"}}
+      {{ui/wrapped-input label="Subject" value=subjectValue placeholder="What is this email about?"}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+        {{ui/wrapped-textarea label="Message" rows="8" value=messageValue placeholder="What message would you like to send?"}}
+    </div>
+  </div>
+  {{/bs-modal-body}}
+  {{#bs-modal-footer}}
+  {{send-button}}
+  {{/bs-modal-footer}}
+{{/bs-modal}}
